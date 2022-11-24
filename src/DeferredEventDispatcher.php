@@ -43,7 +43,7 @@ class DeferredEventDispatcher extends Dispatcher
     /**
      * @inheritDoc
      */
-    public function listen($events, $listener): void
+    public function listen($events, $listener = null): void
     {
         $this->unresolvedListeners[] = [$events, $listener];
     }

@@ -28,7 +28,7 @@ class DeferredEventDispatcherTest extends TestCase
 
         // Add a new listener, actual listeners should still be zero
         $dispatcher->listen('foo', function () {
-            
+
         });
         $this->assertCount(0, $dispatcher->getListeners('foo'));
 
